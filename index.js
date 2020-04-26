@@ -9,6 +9,9 @@ let validAnagram = function(str1, str2){
   if(str1.length !== str2.length){
     return false
   }
+  if(str1 === '' && str2 === ''){
+    return true
+  }
 
   let objectString1 ={}
   let objectString2 = {}
@@ -52,4 +55,5 @@ let validAnagram = function(str1, str2){
 // validAnagram('anagramaa', 'nagaram')
 
 // validAnagram('anagramzzs', 'nagaram')
-validAnagram('cinemaa', 'icemaan')
+// validAnagram('cinemaa', 'icemaan')
+validAnagram('cart', 'carr')
